@@ -1,0 +1,215 @@
+/* ------------------------
+        Global Styles
+----------------------------*/
+
+
+/* Box-Sizing Fix */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/*   Global Body Styles
+--------------------------- */
+
+body {
+    /* Typography */
+    font-size: 1rem;
+    font-family: "Poppins", "Trebuchet MS", sans-serif;
+    color: rgb(26, 26, 26);
+    /* Reset */
+    padding: 0;
+    margin: 0;
+}
+
+/* ------------------------
+        Header Styles
+----------------------------*/
+
+/* Header Styles 
+---------------------------- */
+
+.page-bg {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(255, 255, 255, 0.842), rgba(77, 77, 77, 0)), url('../img/pink-ruby.jpg') no-repeat fixed;
+    background-position: center;
+    background-size: cover;
+    overflow: auto;   
+}
+
+.header-text {
+    width: 60%;
+    margin: 0 auto; 
+    display: block;
+    text-align: center;
+    line-height: 1.8;
+    font-size: 1.1rem;
+}
+
+/* Heading Styles 
+---------------------------- */
+h1 {
+    /* Typography */
+    font-family: "Pacifico", Papyrus, cursive;
+    font-size: 4rem;
+    /* Layout */
+    text-align: center;
+    margin-top: 50px;
+    /* Style */
+    color: rgb(30, 135, 255); 
+    text-shadow: 5px 5px 3px rgb(29, 29, 29);
+}
+
+h2,
+h3 {
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: rgb(30, 135, 255); 
+    text-shadow: 3px 2px 1px rgb(29, 29, 29); 
+}
+
+h3 {
+    font-size: 2rem;
+    margin-top: 50px;
+}
+
+
+
+/* ------------------------
+        Article Styles
+----------------------------*/
+
+.text-styles {
+    width: 60%;
+    margin: 50px auto; 
+    display: block;
+    text-align: center;
+    line-height: 1.8;
+    font-size: 1.1rem
+}
+
+.article-btn {
+    display: flex;
+    width: 400px;
+    justify-content: center;
+    margin: 50px auto;
+    text-decoration: none;
+    color: #fff;
+    text-align: center; 
+    font-size: 1.3em;
+    padding: 20px;
+    background-color: #1e87ff;
+    border: 1px solid #1e87ff;
+    border-radius: 50px;
+    transition: all .5s cubic-bezier(.37,-0.05,0,2.74);
+}
+
+.article-btn:hover {
+    color: white;
+    border: 1px solid #5FCF80;
+    border-radius: 50px;
+    width: 500px;
+    background-color: #5FCF80;
+}
+
+.article-btn:active {
+    background-color: rgb(175, 95, 207);
+}
+
+/* ------------------------
+        Footer Styles
+----------------------------*/
+
+.bg-color {
+    background: linear-gradient(to bottom right, #f3b5cb, #fa82ac);
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Images */
+.htmlLogoContain {
+    max-width: 100%;
+    text-align: center;
+}
+
+.profile-logo {
+    text-align: center;
+
+}
+
+.profile-logo img {
+    border: 5px solid white;
+    border-radius: 50%;
+    margin-top: 30px;
+}
+
+.htmlLogoPic {
+    max-width: 100%;
+}
+
+.infoTitle {
+    font-size: 1.3rem;
+    color: white; 
+    text-shadow: 2px 2px 1px rgb(29, 29, 29);
+    padding-right: 8px; 
+}
+
+.footerInfo p {
+    font-size: 1.1rem;
+    color: white;
+    text-shadow: 2px 2px 2px rgb(29, 29, 29);
+}
+
+.footerInfo {
+    width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.copy {
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 2px rgb(29, 29, 29);
+}
+
+/* --------------------------
+    Media Queries Styles
+-----------------------------*/
+
+@media (max-width: 520px) {
+    .article-btn {
+        font-size: 1em;
+        width: 250px;
+    }
+    .article-btn:hover {
+        width: 300px;
+    }
+    .footerInfo {
+        width: 100%;
+        margin: 0;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .profile-name {
+        width: 300px;
+    }
+}
+
+
+
+
